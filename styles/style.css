@@ -82,6 +82,7 @@ input:-webkit-autofill:active {
 
 .more-button {
     width: 399px;
+    margin: 2px;
 }
 
 .page {
@@ -177,9 +178,9 @@ input:-webkit-autofill:active {
 }
 
 .search-form__textfield:active {
-    padding: 2px 0;
-    border: 1px solid currentColor;
-    outline: none;
+    margin: 1px 0;
+    border: none;
+    outline: 1px solid #ffffff;
 }
 
 .search-form__textfield:focus {
