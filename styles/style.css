@@ -247,7 +247,7 @@ input:-webkit-autofill:active {
 .content__list {
     position: relative;
     display: flex;
-    overflow-y: scroll;
+    overflow-y: auto;
     align-items: flex-start;
     flex-direction: column;
     block-size: 298px;
