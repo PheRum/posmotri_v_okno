@@ -258,16 +258,31 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
     -webkit-appearance: none;
 }
 
-.cards-list-item-template {
-}
-
 .content__list-item {
     list-style: none;
 }
 
 .content__card-link {
+    display: block;
+    margin: 2px;
     text-decoration: none;
-    color: #ffffff;
+}
+
+.content__card-link:hover {
+    text-decoration: underline #ffffff;
+}
+
+.content__card-link:active {
+    background-color: #545050;
+}
+
+.content__card-link:focus {
+    outline: none;
+}
+
+.content__card-link:focus-visible {
+    outline: 1px solid #ffffff;
+    outline-offset: 1px;
 }
 
 .content__video-card {
@@ -276,24 +291,6 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
     width: 394px;
     padding: 2px;
     gap: 4px;
-}
-
-.content__video-card:hover {
-    text-decoration: underline;
-    color: #ffffff;
-}
-
-.content__video-card:active {
-    background-color: #545050;
-}
-
-.content__video-card:focus {
-    outline: none;
-}
-
-.content__video-card:focus-visible {
-    outline: 1px solid #ffffff;
-    outline-offset: 1px;
 }
 
 .content__video-card-description-container {
@@ -326,6 +323,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
     max-width: 194px;
     height: 103px;
     object-fit: cover;
+    object-position: center;
 }
 
 .content__card-link_current {
